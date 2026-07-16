@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: "https://mern-first-project-7v7t.onrender.com",
+    baseURL: "https://mern-first-project-7v7t.onrender.com/api",
     withCredentials: true
 });
 
