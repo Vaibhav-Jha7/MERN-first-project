@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || 'https://event-booking-backend-sjog.onrender.com',
+    baseURL: "https://event-booking-backend-sjog.onrender.com/api",
+    withCredentials: true
 });
 
 // Attach JWT token (if present) to every request
