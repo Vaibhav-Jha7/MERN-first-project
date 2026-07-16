@@ -15,7 +15,7 @@ const Home = () => {
     setLoading(true);
     setError('');
     try {
-      const res = await api.get('/events', { params: { search, category } });
+      const res = await api.get('/api/events', { params: { search, category } });
       setEvents(res.data.events);
     } catch (err) {
       setError('Could not load events. Is the backend server running?');
