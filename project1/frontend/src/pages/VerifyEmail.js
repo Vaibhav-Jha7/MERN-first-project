@@ -21,7 +21,7 @@ const VerifyEmail = () => {
     setMessage('');
     setLoading(true);
     try {
-      const res = await api.post('/api/auth/verify-email', { email, code });
+      const res = await api.post('/auth/verify-email', { email, code });
       login(res.data.token, res.data.user);
       navigate(res.data.user.role === 'admin' ? '/admin' : '/dashboard');
     } catch (err) {
